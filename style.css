@@ -1,5 +1,148 @@
  html, body{
  box-sizing: border-box;
  font-family: sans-serif;
-
+ margin: 0;
+ background-image: url(bg1.jpg);
+ background-size: cover;
+ background-repeat: no-repeat;}
+.header{
+    display:grid;
+    grid-template-columns: 5fr 1fr;
+    justify-items: center;
+    background-color: indigo;
+    border: solid gold 0.1px;
+    
 }
+.left-header{
+    display: flex;
+    gap:30px;
+    transform: translateX(-75px);
+    cursor: pointer;
+    margin-left: 100px;
+}
+.right-header{
+    display: flex;  
+    justify-items: center;
+   align-items: center;
+   gap:30px;
+  transform: translateX(-80px);
+   cursor: pointer;
+   
+}
+.infos{
+    color: rgb(178, 216, 216);
+}
+.email{
+   display: grid; 
+   justify-items: center;
+   align-items: center;
+}
+.para{
+    transform: translateY(-13px);
+}
+.nav-bar{
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    border: solid transparent 1px;
+    background-color: rgba(155, 220, 220, 0.603);
+   
+}
+.nav{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    padding-top: 20px;
+    transform: translateX(-80px);
+}
+a, .nav{
+   color: black;
+    gap: 20px;
+    z-index: 1;
+    font-weight: bold;}
+a:hover{
+   color:aquamarine}
+.logo{
+   padding-top: 10px;
+   margin-left: 100px;
+   cursor: pointer;}
+a{
+    text-decoration: none;}
+.main{
+    margin-left: 100px;
+    margin-top: 100px;}
+.btn{
+    background-color: rgb(173, 255, 47) ;
+    height: 50px;
+    width: 200px;
+    border: transparent;
+    border-radius: 5px;
+    font-weight: bold;
+    color: rgb(90, 75, 75);
+    letter-spacing: 4px;}
+.rect-boxes{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr ;
+    margin-top: 150px;}
+h1{
+    font-size: 30px;
+    font-family: sans-serif-typeface;}
+span{
+   
+}
+.first-box{
+    display: flex;
+    border: transparent;
+    width: 320px;
+    gap: 5px;
+    background-color: rgb(173, 255, 47, 0.7);
+    transition:2s 0.5s;
+    
+}
+.first-box:hover{
+    background-color: rgb(173, 255, 47);
+    transform: translateY(-10px);
+}
+.worker{
+    margin-left: 20px;
+    margin-top: 30px;
+}
+h4{
+    margin-top: 15px;
+    letter-spacing: 5px;
+}
+.hr{
+    width:50%;
+    margin-left: 0;
+    
+}
+.lorem{
+   
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    body{}
+    
+    
+  }
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+    .example {background: green;}
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    .example {background: blue;}
+  } 
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    .example {background: orange;}
+  } 
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    .example {background: pink;}

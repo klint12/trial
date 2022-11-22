@@ -11,14 +11,17 @@
    <div class="container">
    <section class="header">
     <div class="left-header">
-        <div class="email"><img src="email.png" alt="">
-        <h5>Email Address</h5><p>johndoe@gmail.com</p></div>
+        <div class="email"><img src="email.png" alt=""></div>
+        <div class="infos"><h5>Email Address</h5><p class="para">johndoe@gmail.com</p></div>
+        <hr>
 
-        <div class="contact"><img src="phone-call.png" alt="">
-            <h5>Contact Number</h5><p>(+000)1100110010</p></div>
+        <div class="email"><img src="phone-call.png" alt=""></div>
+           <div class="infos"> <h5>Contact Number</h5><p class="para">(+000)1100110010</p></div>
+           <hr>
 
-            <div class="phone"><img src="email.png" alt="">
-                <h5>Opening Hours</h5><p>Mon-Sat 9:00AM - 14:30PM</p></div>
+            <div class="email"><img src="time.png" alt=""></div>
+              <div class="infos"> <h5>Opening Hours</h5><p class="para">Mon-Sat 9:00AM - 14:30PM</p></div> 
+              <hr>
     </div>
     <div class="right-header">
         <div><img src="twitter.png" alt=""></div>
@@ -29,46 +32,54 @@
    </section>
    
    <section class="nav-bar">
-    <div class="right-nav-bar"><img src="logo.png" alt="" height="100px"></div>
-    <div class="left-nav-bar">
-        <ul class="nav">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">PROJECTS</a></li>
-            <li><a href="#">ABOUT US</a></li>
-            <li><a href="#">SERVICES</a></li>
-            <li><a href="#">EQUIPMENTS</a></li>
-            <li><a href="#">BLOG</a></li>
-            <li><a href="#">TEAM</a></li>
-        </ul>
+    <div class="left-nav-bar"><img src="logo.png" alt="" height="60px" class="logo"></div>
+    <div class="right-nav-bar">
+        <nav class="nav">
+            <a href="#">HOME</a>
+            <a href="#">PROJECTS</a>
+            <a href="#">ABOUT US</a>
+            <a href="#">SERVICES</a>
+            <a href="#">EQUIPMENTS</a>
+            <a href="#">BLOG</a>
+            <a href="#">TEAM</a>
+            
+        </nav>
     </div>
    </section>
    
    <section class="main">
-    <h1>WE BUILD THE HOUSE. YOU MAKE IT A HOME</h1>
-    <BUtton class="btn"><a href="#">BUILD IT NOW</a></BUtton>
-    <div class="rect-boxs">
-    <div class="cont">
-        <img src="worker.png" alt="">
-        <div> <h3>CONSTRUCTION</h3>
-            <P>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit magni quis non hic, itaque maiores sunt aliquid, amet</P>
-        </div>
-
-        <div class="arch">
-            <img src="architecture.png" alt="">
-            <div> <h3>ARCHITECHTURE</h3>
-                <P>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit magni quis non hic, itaque maiores sunt aliquid, amet</P>
+    <h1><span>W</span>E BUILD THE HOUSE. YOU MAKE IT A HOME</h1>
+    <BUtton class="btn" id="button" onclick="changeStyle()">Build it now</a></BUtton>
+    <div class="rect-boxes">
+        <div class="first-box">
+            <div class="worker"><img src="worker.png" alt=""></div>
+           
+            <div>
+                <h4>CONSTRUCTION</h4>  <hr class="hr">
+                <div class="lorem">Lorem ipsum dolor sit,amet consectetur.Exercitationem quas vitae.</div>
+            
             </div>
-
-            <div class="cont">
-                <img src="teach.png" alt="">
-                <div> <h3>CONSULTING</h3>
-                    <P>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit magni quis non hic, itaque maiores sunt aliquid, amet</P>
-                </div>
+        </div>
+        <div class="first-box">
+            <div class="worker"><img src="architecture.png" alt=""></div>
+           
+            <div>
+                <h4>ARCHITECTURE</h4> <hr class="hr">
+                <div class="lorem">Lorem ipsum dolor sit, amet consectetur.Exercitationem quas vitae. </div>
+              
+            </div>
+        </div>
+         <div class="first-box">
+            <div class="worker"><img src="teach.png" alt=""></div>
+           
+            <div>
+                <h4>CONSULTING</h4> <hr class="hr">
+                <div class="lorem">Lorem ipsum dolor sit, amet consectetur.Exercitationem quas vitae.</div>
+              
+            </div>
+        </div>
     </div>
-    <div></div>
-    <div></div>
-  </div>
-    
+   
 </section>
 
    </div>
