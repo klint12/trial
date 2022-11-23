@@ -5,6 +5,8 @@
  background-image: url(bg1.jpg);
  background-size: cover;
  background-repeat: no-repeat;}
+ 
+ 
 .header{
     display:grid;
     grid-template-columns: 5fr 1fr;
@@ -45,6 +47,7 @@
     grid-template-columns: 2fr 4fr;
     border: solid transparent 1px;
     background-color: rgba(155, 220, 220, 0.603);
+    
    
 }
 .nav{
@@ -96,12 +99,13 @@ span{
     width: 320px;
     gap: 5px;
     background-color: rgb(173, 255, 47, 0.7);
-    transition:2s 0.5s;
+    transition:2s 0.5s ease;
     
 }
 .first-box:hover{
     background-color: rgb(173, 255, 47);
     transform: translateY(-10px);
+    border: 1px rgb(250, 6, 6) solid;
 }
 .worker{
     margin-left: 20px;
@@ -120,29 +124,13 @@ h4{
    
 }
 
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-    body{}
+/* Extra small devices (phones, 768px and down) */
+@media only screen and (min-width: 768px) {
     
-    
-  }
+}
   
-  /* Small devices (portrait tablets and large phones, 600px and up) */
-  @media only screen and (min-width: 600px) {
-    .example {background: green;}
-  }
-  
-  /* Medium devices (landscape tablets, 768px and up) */
-  @media only screen and (min-width: 768px) {
-    .example {background: blue;}
-  } 
-  
-  /* Large devices (laptops/desktops, 992px and up) */
-  @media only screen and (min-width: 992px) {
-    .example {background: orange;}
-  } 
-  
-  /* Extra large devices (large laptops and desktops, 1200px and up) */
-  @media only screen and (min-width: 1200px) {
-    .example {background: pink;}
+ 

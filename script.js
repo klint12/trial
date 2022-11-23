@@ -4,3 +4,4 @@ function changeStyle(){
     
     element.style.backgroundColor = "";
 }
+
